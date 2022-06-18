@@ -51,7 +51,7 @@ public class SkipGramWord2Vec {
 
     System.out.println("Writing word vectors to text file....");
 
-    // Write word vectors to file
+    // Write word vectors to file (deprecated but does exactly what we want)
     WordVectorSerializer.writeWordVectors(vec, new File("wordsVector.txt"));
     //WordVectorSerializer.writeWord2VecModel(vec, new File("wordsVector.txt"));
 

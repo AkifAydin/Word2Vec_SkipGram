@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8cfc4b4-2dcb-4d84-972f-7f6fd4219236" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="d8cfc4b4-2dcb-4d84-972f-7f6fd4219236" name="Default" comment="output scores of results">
       <change beforePath="$PROJECT_DIR$/src/main/java/SkipGramWord2Vec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SkipGramWord2Vec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wordsVector.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wordsVector.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,8 +150,16 @@
       <workItem from="1655546518338" duration="2038000" />
       <workItem from="1655548616377" duration="3379000" />
       <workItem from="1655552081719" duration="969000" />
-      <workItem from="1655572421603" duration="329000" />
+      <workItem from="1655572421603" duration="889000" />
     </task>
+    <task id="LOCAL-00001" summary="output scores of results">
+      <created>1655572973183</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1655572973183</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -205,5 +209,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="output scores of results" />
+    <option name="LAST_COMMIT_MESSAGE" value="output scores of results" />
   </component>
 </project>
