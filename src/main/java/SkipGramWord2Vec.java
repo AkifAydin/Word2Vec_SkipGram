@@ -36,7 +36,7 @@ public class SkipGramWord2Vec {
     TokenizerFactory t = new DefaultTokenizerFactory();
     t.setTokenPreProcessor(new CommonPreprocessor());
 
-    System.out.println("Building model....");
+    System.out.println("Building model...");
     Word2Vec vec = new Word2Vec.Builder()
             .minWordFrequency(5) // only learn words appearing at least 5 times
             .layerSize(100) // specifies the number of features in the word vector
@@ -53,7 +53,7 @@ public class SkipGramWord2Vec {
 
     // Write word vectors to file (deprecated but does exactly what we want)
     WordVectorSerializer.writeWordVectors(vec, new File("wordsVector.txt"));
-    //WordVectorSerializer.writeWord2VecModel(vec, new File("wordsVector.txt"));
+    // WordVectorSerializer.writeWord2VecModel(vec, new File("wordsVector.txt"));
 
     // Prints out the closest 10 words to "day"
     System.out.println("Closest Words of: " + TARGET);
