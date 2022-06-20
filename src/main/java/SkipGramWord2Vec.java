@@ -14,17 +14,17 @@ import java.util.Collection;
 
 public class SkipGramWord2Vec {
 
-  public static final String TARGET = "day";
+  public static final String INPUT = "day";
 
   // Source:
   // https://deeplearning4j.konduit.ai/v/en-1.0.0-beta7/language-processing/word2vec#just-give-me-the-code
 
   public static void main(String[] args) throws Exception {
 
-    // Gets Path to Text file
+    // get path to Text file
     String filePath = "raw_sentences.txt";
 
-    // Iterator to Iterate over a dataset.
+    // Iterator to iterate over the dataset.
     // SentenceIterator returns strings.
     SentenceIterator iter = new BasicLineIterator(filePath);
 
@@ -40,30 +40,27 @@ public class SkipGramWord2Vec {
     Word2Vec vec = new Word2Vec.Builder()
             .minWordFrequency(5) // only learn words appearing at least 5 times
             .layerSize(100) // specifies the number of features in the word vector
-            .seed(42) // random seed
-            .windowSize(5)  // size of window
+            .seed(42) // seed for random NN initialization
             .iterate(iter) // tells the net what batch of the dataset its training on
-            .tokenizerFactory(t)  // the token generator
+            .tokenizerFactory(t)  // feeds the builder the individual words of each batch
             .build();
 
     System.out.println("Fitting Word2Vec model....");
     vec.fit();  // tells the configured net to begin training
 
     System.out.println("Writing word vectors to text file....");
-
-    // Write word vectors to file (deprecated but does exactly what we want)
+    // write word vectors to file (deprecated but does exactly what we want)
     WordVectorSerializer.writeWordVectors(vec, new File("wordsVector.txt"));
     // WordVectorSerializer.writeWord2VecModel(vec, new File("wordsVector.txt"));
 
-    // Prints out the closest 10 words to "day"
-    System.out.println("Closest Words of: " + TARGET);
-    Collection<String> lst = vec.wordsNearest(TARGET, 10); //Target word
-    System.out.println("10 Words closest to '" + TARGET + "': " + lst);
+    // prints out the closest 10 words to the input word
+    Collection<String> lst = vec.wordsNearest(INPUT, 10);
+    System.out.println("10 words closest to '" + INPUT + "': " + lst);
 
-    // Words similarity score
-    System.out.println("Word similarity score for '" + TARGET + "' and results:");
+    // word similarity scores
+    System.out.println("Word similarity score for '" + INPUT + "' and results:");
     for (String compWord : lst) {
-      double simScore = vec.similarity(TARGET, compWord);
+      double simScore = vec.similarity(INPUT, compWord);
       System.out.println("\t" + compWord + ": " + simScore);
     }
   }

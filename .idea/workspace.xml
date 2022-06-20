@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8cfc4b4-2dcb-4d84-972f-7f6fd4219236" name="Default" comment="output scores of results">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/SkipGramWord2Vec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/SkipGramWord2Vec.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wordsVector.txt" beforeDir="false" afterPath="$PROJECT_DIR$/wordsVector.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +77,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
   </component>
   <component name="RunManager" selected="Application.SkipGramWord2Vec">
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -150,7 +153,10 @@
       <workItem from="1655546518338" duration="2038000" />
       <workItem from="1655548616377" duration="3379000" />
       <workItem from="1655552081719" duration="969000" />
-      <workItem from="1655572421603" duration="889000" />
+      <workItem from="1655572421603" duration="4188000" />
+      <workItem from="1655587244619" duration="127000" />
+      <workItem from="1655654220538" duration="235000" />
+      <workItem from="1655729140894" duration="1788000" />
     </task>
     <task id="LOCAL-00001" summary="output scores of results">
       <created>1655572973183</created>
@@ -159,7 +165,21 @@
       <option name="project" value="LOCAL" />
       <updated>1655572973183</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="output scores of results">
+      <created>1655573330445</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655573330445</updated>
+    </task>
+    <task id="LOCAL-00003" summary="output scores of results">
+      <created>1655573529629</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655573529629</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
